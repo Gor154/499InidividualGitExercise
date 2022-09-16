@@ -5,7 +5,9 @@ def break_up(number: int):
 def main():
     number = 0
     while int(number) < 1 or int(number) > 999:
-        number = input("Enter a number from 1 to 999: ")
+        number = input("Enter an integer from 1 to 999: ")
+        if not number.isnumeric():
+            number = 0
     break_up(int(number))
 
 
