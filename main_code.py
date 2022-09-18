@@ -1,5 +1,13 @@
 def break_up(number: int):
     print("Hundreds: " + str(number // 100 % 10) + " Tens: " + str(number // 10 % 10) + " Ones: " + str(number % 10))
+    is_even(number)
+
+
+def is_even(number: int):
+    if number % 2 == 0:
+        print(str(number)+" is even")
+    else:
+        print(str(number) + " is odd")
 
 
 def main():
