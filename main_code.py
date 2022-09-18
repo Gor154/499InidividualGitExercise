@@ -29,6 +29,7 @@ def main():
         if not number.isnumeric():
             number = 0
     break_up(int(number))
+    # This section of the code is not directly tested
     if is_prime(int(number)):
         print(number+" is prime")
     else:
